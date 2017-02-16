@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PeripheralTableViewCell" customModule="BlueDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IET-HX-RSh">
+                        <rect key="frame" x="15" y="10" width="290" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76o-mz-rZf">
+                        <rect key="frame" x="15" y="34.5" width="290" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXk-qL-MTf">
+                        <rect key="frame" x="15" y="55.5" width="290" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IET-HX-RSh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0I7-lc-kAG"/>
+                    <constraint firstItem="fXk-qL-MTf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5n4-Rb-d2x"/>
+                    <constraint firstAttribute="trailing" secondItem="76o-mz-rZf" secondAttribute="trailing" constant="15" id="Gop-dQ-9gx"/>
+                    <constraint firstItem="76o-mz-rZf" firstAttribute="top" secondItem="IET-HX-RSh" secondAttribute="bottom" constant="5" id="Oax-kR-5ET"/>
+                    <constraint firstItem="fXk-qL-MTf" firstAttribute="top" secondItem="76o-mz-rZf" secondAttribute="bottom" constant="5" id="dGo-CU-KwP"/>
+                    <constraint firstAttribute="trailing" secondItem="fXk-qL-MTf" secondAttribute="trailing" constant="15" id="gKw-Bl-5IN"/>
+                    <constraint firstAttribute="trailing" secondItem="IET-HX-RSh" secondAttribute="trailing" constant="15" id="grW-AO-Xmh"/>
+                    <constraint firstItem="76o-mz-rZf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="o1t-bJ-Mtr"/>
+                    <constraint firstItem="IET-HX-RSh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="y6C-eU-3kz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="identifierLabel" destination="76o-mz-rZf" id="8LK-NT-Tgl"/>
+                <outlet property="nameLabel" destination="IET-HX-RSh" id="0WC-M0-8Di"/>
+                <outlet property="stateLabel" destination="fXk-qL-MTf" id="NQh-E8-QMG"/>
+            </connections>
+            <point key="canvasLocation" x="-108" y="-42"/>
+        </tableViewCell>
+    </objects>
+</document>
